@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f6f9;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.employee-table-container {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table td button {
+  margin-right: 10px;
+}
+
+.add-employee-btn {
+  margin-bottom: 20px;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-employee-btn:hover {
+  background-color: #218838;
+}
+
+.employee-form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.form-group span {
+  color: red;
+  font-size: 0.875rem;
+}
+
+.submit-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.cancel-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background-color: #5a6268;
+}
+
+@media (max-width: 768px) {
+  .employee-form-container {
+    padding: 20px;
+  }
+
+  .table {
+    font-size: 14px;
+  }
+
+  .add-employee-btn {
+    font-size: 14px;
+  }
+
+  .submit-btn,
+  .cancel-btn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
+.employee-form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.form-group span {
+  color: red;
+  font-size: 0.875rem;
+}
+
+.form-group .MuiInput-root input[type="file"] {
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  display: block;
+}
+
+.form-group .MuiInput-root input[type="file"]:focus {
+  border-color: #007bff;
+}
+
+.submit-btn,
+.cancel-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  margin-left: 10px;
+}
+
+.cancel-btn:hover {
+  background-color: #5a6268;
+}
+
+.form-group input:invalid {
+  border-color: #e74c3c;
+}
+
+.form-group input:valid {
+  border-color: #2ecc71;
+}
+
+.form-group .MuiInput-root input[type="file"]::file-selector-button {
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .employee-form-container {
+    padding: 20px;
+  }
+
+  .submit-btn,
+  .cancel-btn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
